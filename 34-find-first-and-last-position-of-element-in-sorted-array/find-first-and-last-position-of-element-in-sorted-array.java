@@ -1,7 +1,7 @@
 class Solution {
-    public int[] searchRange(int[] arr, int target) {
+   public int[] searchRange(int[] arr, int target) {
 
-        int ans[]={-1,-1} ;
+        int ans [] = new int[2] ;
         int start = search(arr,target,true) ;
         int end = search(arr, target, false) ;
            ans[0]=start;
@@ -30,6 +30,5 @@ class Solution {
       }
       return ans ;
    }
-
 
 }
